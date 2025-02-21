@@ -1,0 +1,19 @@
+we will be creating a dns server 
+
+1.it will store the IP addresses of different websites and when we get the query we will return their IP
+
+whenever we purchase a domain like from google or vercel etc we have several options 
+first category is A where the IP is directly stored or mapped with the main site name like vick.com
+
+then there is one category with the name CNAME where i take the reference of some other web like 
+blog.vick.com - CNAME - hashnode.com
+hashnode.com - A - 78.78.2.1
+
+then there is a category called NS when we query a NS site it will have its own server with a IP and our request will be searched in that server or by that server 
+blog.vick.com - NS - myserver.com
+myserver.com - A - 89.78.2.1
+
+now the query or IP of blog.vick.com will be searched in the server of myserver.com 
+
+soo here we will create our own myserver with the help of UDP protocol 
+
